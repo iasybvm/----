@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <title>欢迎来到云端时代订饭系统</title>
+    </head>
+  <body>
+    <div class="nav">
+      <img src="{{ static_url("ct.png") }}" />
+    </div>
+    {% block main %}
+    <form method="post" action=".">
+      <label for="id_name">姓名：</label>
+      <input type="text" id="id_name">
+      <label for="id_cat">种类：</label>
+      <input type="radio" name="cat">
+      <input type="submit">
+      </form>
+    {% end %}
+    </body>
+</html>

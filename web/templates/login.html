@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block main %}
+<form action="" method="post">
+  <label for="id_name">姓名：</label>
+  <input type="text" name="name" id="id_name">
+  <label for="id_password">密码：</label>
+  <input type="password" name="password" id="id_password">
+  <input type="submit" value="登录">
+  {{ xsrf_form_html() }}
+</form>
+{% end %}

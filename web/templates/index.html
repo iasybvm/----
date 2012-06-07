@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block main %}
+<form method="post" style="margin-left:40px;">
+  {{ xsrf_form_html() }}
+  {% for id, name in categories %}
+  <p>  <input type="radio" name="category" value="{{ id }}" 
+	 id="id_cat{{ id }}">
+  <label for="id_cat{{ id }}">{{ name }}</label></p>
+  {% end %}
+  <input type="submit" value="订餐">
+</form>
+{% end %}

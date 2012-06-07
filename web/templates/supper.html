@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block main %}
+<form action="/cancel" method="post">
+  {{ xsrf_form_html() }}
+  <p>今天您订的饭是：{{ category }}</p>
+  <p>您可以点击下面的按钮取消它。</p>
+  <input type="submit" value="取消订饭">
+  </form>
+{% end %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block main %}
+<h1>今天有{{ count }}个人订餐</h1>
+<table border="1">
+  <thead>
+    <tr>
+      {% for k in D2 %}
+      <td>{{ k }}</td>
+      {% end %}
+    </tr>
+  </thead>
+  <tr>
+    {% for k in D2 %}
+    <td>{{ "；".join(D2[k]) }}</td>
+    {% end %}
+  </tr>
+  </table>
+{% end %}

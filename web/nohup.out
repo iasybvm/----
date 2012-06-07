@@ -1,0 +1,539 @@
+[I 120606 15:49:30 web:1447] 200 GET / (127.0.0.1) 17.08ms
+[I 120606 15:54:20 web:1447] 200 GET / (127.0.0.1) 1.21ms
+[I 120606 17:07:08 web:1447] 304 GET / (127.0.0.1) 43.88ms
+[I 120606 17:07:17 web:1447] 304 GET / (127.0.0.1) 16.20ms
+[I 120606 17:07:24 web:1447] 302 POST / (127.0.0.1) 53.92ms
+[E 120606 17:07:24 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=6e904427e8ab42fd948f0116f0b192a0&category=8', headers={'Content-Length': '49', 'Accept-Language': 'en-us,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.1.109', 'Cookie': 'user="NTk=|1338369080|90e86e66fa753e0f610e4c121f2bea5a9ddf00f6"; _xsrf=6e904427e8ab42fd948f0116f0b192a0', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:07:24 web:718] Cannot send error response after headers written
+[I 120606 17:07:24 web:1447] 304 GET /supper (127.0.0.1) 21.04ms
+[I 120606 17:07:29 web:1447] 302 POST / (127.0.0.1) 65.58ms
+[E 120606 17:07:29 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=a2c44aeb57af4a6b87ddc31096cb9771&category=7', headers={'Content-Length': '49', 'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html, application/xhtml+xml, */*', 'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.1.254', 'Cookie': 'user="MzI=|1338371498|2215198406cac89b39b768318c9039877efba080"; _xsrf=a2c44aeb57af4a6b87ddc31096cb9771', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:07:29 web:718] Cannot send error response after headers written
+[I 120606 17:07:29 web:1447] 200 GET /supper (127.0.0.1) 4.31ms
+[I 120606 17:08:19 web:1447] 200 GET / (127.0.0.1) 8.55ms
+[I 120606 17:08:30 web:1447] 304 GET / (127.0.0.1) 4.75ms
+[I 120606 17:09:07 web:1447] 302 POST / (127.0.0.1) 59.08ms
+[E 120606 17:09:07 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=311f26971dba41d3b07380dc9bc45b68&category=8', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.1.254', 'Cookie': 'user="Nw==|1338888318|f674287f8f6096441717eb843cf53760b6aaf814"; _xsrf=311f26971dba41d3b07380dc9bc45b68', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:09:07 web:718] Cannot send error response after headers written
+[I 120606 17:09:07 web:1447] 200 GET /supper (127.0.0.1) 4.46ms
+[I 120606 17:09:31 web:1447] 200 GET / (127.0.0.1) 5.82ms
+[I 120606 17:09:38 web:1447] 302 POST / (127.0.0.1) 57.83ms
+[E 120606 17:09:38 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=6f4bc8ecd0be4fac899a47d7fbe7b554&category=9', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-ms-application, application/vnd.ms-xpsdocument, application/xaml+xml, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; QQDownload 708; SLCC1; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729; InfoPath.2)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Ua-Cpu': 'x86', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.0.121', 'Cookie': 'user="Njg=|1338456629|a16be8e71e7d644907e7f304902622e3e0a6c91f"; _xsrf=6f4bc8ecd0be4fac899a47d7fbe7b554', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:09:38 web:718] Cannot send error response after headers written
+[I 120606 17:09:38 web:1447] 200 GET /supper (127.0.0.1) 9.36ms
+[I 120606 17:13:03 web:1447] 302 GET / (127.0.0.1) 2.84ms
+[I 120606 17:13:03 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 7.46ms
+[I 120606 17:13:47 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 4.89ms
+[I 120606 17:13:47 web:1447] 200 GET / (127.0.0.1) 4.98ms
+[I 120606 17:13:50 web:1447] 304 GET / (127.0.0.1) 4.84ms
+[I 120606 17:13:52 web:1447] 302 POST / (127.0.0.1) 66.68ms
+[E 120606 17:13:52 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=3cc566aba34b4564bd6674041bd826bc&category=9', headers={'Origin': 'http://192.168.0.154:8888', 'Content-Length': '49', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip,deflate,sdch', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.19 (KHTML, like Gecko) Ubuntu/12.04 Chromium/18.0.1025.151 Chrome/18.0.1025.151 Safari/535.19', 'Accept-Charset': 'GBK,utf-8;q=0.7,*;q=0.3', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '192.168.1.164', 'Cookie': '_xsrf=3cc566aba34b4564bd6674041bd826bc; user="NDY=|1338974027|b6e43926c8c72d6bb3804fbc7d5f1740115aceb5"', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:13:52 web:718] Cannot send error response after headers written
+[I 120606 17:13:52 web:1447] 200 GET /supper (127.0.0.1) 4.06ms
+[I 120606 17:15:03 web:1447] 302 POST / (127.0.0.1) 52.19ms
+[E 120606 17:15:03 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=35c486f69e1f409796f8f1756c81caae&category=8', headers={'Content-Length': '49', 'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; 360SE)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.0.49', 'Cookie': 'user="MTk=|1338369020|60044c70d3cd3231a07a4eb50c871d9a6d040ee6"; _xsrf=35c486f69e1f409796f8f1756c81caae', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:15:03 web:718] Cannot send error response after headers written
+[I 120606 17:15:03 web:1447] 200 GET /supper (127.0.0.1) 4.13ms
+[I 120606 17:15:25 web:1447] 200 GET / (127.0.0.1) 6.16ms
+[I 120606 17:15:30 web:1447] 302 POST / (127.0.0.1) 109.44ms
+[I 120606 17:15:30 web:1447] 200 GET /supper (127.0.0.1) 4.12ms
+[E 120606 17:15:30 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=7374d5bbc745487a8282d0a1b617be65&category=8', headers={'Content-Length': '49', 'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.1.29', 'Cookie': 'user="NDc=|1338457432|5605b25667807a9a39ce11e9c5c8b777ff25b250"; _xsrf=7374d5bbc745487a8282d0a1b617be65', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:15:30 web:718] Cannot send error response after headers written
+[I 120606 17:16:20 web:1447] 302 GET / (127.0.0.1) 1.23ms
+[I 120606 17:16:20 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.03ms
+[I 120606 17:16:21 web:1447] 302 GET / (127.0.0.1) 1.22ms
+[I 120606 17:16:28 web:1447] 200 GET / (127.0.0.1) 4.66ms
+[I 120606 17:16:35 web:1447] 200 GET /statics (127.0.0.1) 16.08ms
+[W 120606 17:16:53 web:1056] 403 POST /auth/login?next=%2F (127.0.0.1): XSRF cookie does not match POST argument
+[W 120606 17:16:53 web:1447] 403 POST /auth/login?next=%2F (127.0.0.1) 3.45ms
+[W 120606 17:17:21 web:1056] 403 POST /auth/login?next=%2F (127.0.0.1): XSRF cookie does not match POST argument
+[W 120606 17:17:21 web:1447] 403 POST /auth/login?next=%2F (127.0.0.1) 2.72ms
+[I 120606 17:17:46 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.85ms
+[I 120606 17:18:23 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 4.67ms
+[I 120606 17:18:23 web:1447] 200 GET / (127.0.0.1) 4.98ms
+[I 120606 17:19:08 web:1447] 302 POST / (127.0.0.1) 47.23ms
+[E 120606 17:19:08 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=4266e3d6e72842c9b6b5e1e3b54711ff&category=9', headers={'Content-Length': '49', 'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, */*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; .NET4.0C; .NET4.0E)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.0.247', 'Cookie': '_xsrf=4266e3d6e72842c9b6b5e1e3b54711ff; user="Mzg=|1338974303|3cf9bce5ee80a7c1ac222d67cf31ade1fde7f11d"', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:19:08 web:718] Cannot send error response after headers written
+[I 120606 17:19:08 web:1447] 200 GET /supper (127.0.0.1) 4.69ms
+[I 120606 17:23:27 web:1447] 200 GET /statics (127.0.0.1) 5.83ms
+[I 120606 17:23:28 web:1447] 200 GET /statics (127.0.0.1) 12.95ms
+[I 120606 17:23:30 web:1447] 200 GET /statics (127.0.0.1) 5.22ms
+[I 120606 17:23:38 web:1447] 200 GET /statics (127.0.0.1) 5.88ms
+[I 120606 17:23:44 web:1447] 304 GET / (127.0.0.1) 4.89ms
+[I 120606 17:23:49 web:1447] 302 POST / (127.0.0.1) 73.81ms
+[E 120606 17:23:49 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=4bf1bde0642b4cf39e95195a666bc4b8&category=1', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/20100101 Firefox/12.0', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.1.96', 'Cookie': 'user="NDE=|1338369425|40415b13666981d084bb08a6d0168e83ac10a7ba"; _xsrf=4bf1bde0642b4cf39e95195a666bc4b8', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:23:49 web:718] Cannot send error response after headers written
+[I 120606 17:23:49 web:1447] 304 GET /supper (127.0.0.1) 4.35ms
+[I 120606 17:24:37 web:1447] 200 GET /statics (127.0.0.1) 6.03ms
+[I 120606 17:24:38 web:1447] 200 GET /statics (127.0.0.1) 5.32ms
+[I 120606 17:24:55 web:1447] 200 GET / (127.0.0.1) 9.40ms
+[I 120606 17:25:01 web:1447] 200 GET /statics (127.0.0.1) 11.33ms
+[I 120606 17:26:53 web:1447] 304 GET / (127.0.0.1) 4.67ms
+[I 120606 17:27:06 web:1447] 302 POST / (127.0.0.1) 48.89ms
+[E 120606 17:27:06 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=c6f88548d5e24d3d9d40ef4c508dad5b&category=7', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'image/gif, image/jpeg, image/pjpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, application/x-ms-application, application/x-ms-xbap, application/vnd.ms-xpsdocument, application/xaml+xml, */*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS124342; GTB7.3; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.1.232', 'Cookie': 'user="NjM=|1338456354|7330df35951ab20141a622c5b5277fb2bb680597"; _xsrf=c6f88548d5e24d3d9d40ef4c508dad5b', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:27:06 web:718] Cannot send error response after headers written
+[I 120606 17:27:06 web:1447] 200 GET /supper (127.0.0.1) 4.27ms
+[I 120606 17:27:16 web:1447] 200 GET / (127.0.0.1) 6.65ms
+[I 120606 17:27:24 web:1447] 304 GET / (127.0.0.1) 4.82ms
+[I 120606 17:27:26 web:1447] 302 POST / (127.0.0.1) 79.50ms
+[E 120606 17:27:26 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=ee9dcefd861e4e78b6e634c609d26fbb&category=8', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/xaml+xml, application/x-ms-xbap, application/x-ms-application, */*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.1.158', 'Cookie': 'user="NjY=|1338888157|4b6389093061fc974e5f632f2adf06aae34df74c"; _xsrf=ee9dcefd861e4e78b6e634c609d26fbb', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:27:26 web:718] Cannot send error response after headers written
+[I 120606 17:27:26 web:1447] 200 GET /supper (127.0.0.1) 4.21ms
+[I 120606 17:27:28 web:1447] 302 POST / (127.0.0.1) 56.99ms
+[E 120606 17:27:28 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=21eba3022a3941c08843ed1de5736ed9&category=8', headers={'Content-Length': '49', 'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html, application/xhtml+xml, */*', 'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.1.10', 'Cookie': 'user="MQ==|1338369731|0ee2bd60dd871aec72fe03e9cf4d81e9944cc392"; _xsrf=21eba3022a3941c08843ed1de5736ed9', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:27:28 web:718] Cannot send error response after headers written
+[I 120606 17:27:28 web:1447] 200 GET /supper (127.0.0.1) 4.17ms
+[I 120606 17:27:29 web:1447] 200 GET / (127.0.0.1) 5.79ms
+[I 120606 17:27:36 web:1447] 200 POST / (127.0.0.1) 4.31ms
+[I 120606 17:28:42 web:1447] 302 GET / (127.0.0.1) 1.20ms
+[I 120606 17:28:42 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.19ms
+[I 120606 17:28:44 web:1447] 302 GET / (127.0.0.1) 1.83ms
+[I 120606 17:28:44 web:1447] 304 GET /auth/login?next=%2F (127.0.0.1) 1.92ms
+[I 120606 17:29:02 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 5.85ms
+[I 120606 17:29:02 web:1447] 200 GET / (127.0.0.1) 4.30ms
+[I 120606 17:29:06 web:1447] 302 POST / (127.0.0.1) 102.79ms
+[E 120606 17:29:06 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=4106cc21d0b84c229193d56d7adfe5df&category=7', headers={'Content-Length': '49', 'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html, application/xhtml+xml, */*', 'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.1.83', 'Cookie': '_xsrf=4106cc21d0b84c229193d56d7adfe5df; user="MzU=|1338974942|c345ded6cd3a6caa8a6c7ab99a2d130c390f3bb1"', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:29:06 web:718] Cannot send error response after headers written
+[I 120606 17:29:06 web:1447] 200 GET /supper (127.0.0.1) 5.47ms
+[I 120606 17:29:48 web:1447] 200 GET / (127.0.0.1) 5.68ms
+[I 120606 17:30:42 web:1447] 302 GET / (127.0.0.1) 2.63ms
+[I 120606 17:30:42 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 11.65ms
+[I 120606 17:30:58 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 4.11ms
+[I 120606 17:30:58 web:1447] 200 GET / (127.0.0.1) 4.93ms
+[I 120606 17:31:01 web:1447] 302 POST / (127.0.0.1) 71.68ms
+[E 120606 17:31:01 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=2ec1e9e173084379a46b77e2051b49bb&category=8', headers={'Content-Length': '49', 'Accept-Language': 'en-US,en;q=0.9', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1', 'User-Agent': 'Opera/9.80 (X11; Linux x86_64; U; Edition Next; en) Presto/2.10.289 Version/12.00', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.0.96', 'Cookie': '_xsrf=2ec1e9e173084379a46b77e2051b49bb; user="NDg=|1338975058|03d65532ce23bfd0b8e673185ea8b06074320d55"', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:31:01 web:718] Cannot send error response after headers written
+[I 120606 17:31:01 web:1447] 200 GET /supper (127.0.0.1) 4.52ms
+[I 120606 17:31:33 web:1447] 302 POST / (127.0.0.1) 56.98ms
+[E 120606 17:31:33 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=1f16494179984439927d4b06743a30d3&category=9', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn,en-us;q=0.7,en;q=0.3', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:11.0) Gecko/20100101 Firefox/11.0', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.1.72', 'Cookie': 'user="NzE=|1338455903|614e9d7bf8cdfbe66361e677e75eda90df082731"; _xsrf=1f16494179984439927d4b06743a30d3', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:31:33 web:718] Cannot send error response after headers written
+[I 120606 17:31:33 web:1447] 200 GET /supper (127.0.0.1) 4.36ms
+[I 120606 17:47:13 web:1447] 302 GET / (127.0.0.1) 1.51ms
+[I 120606 17:47:13 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.60ms
+[I 120606 17:47:23 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 5.06ms
+[I 120606 17:47:23 web:1447] 200 GET / (127.0.0.1) 4.84ms
+[I 120606 17:47:27 web:1447] 304 GET /supper (127.0.0.1) 5.05ms
+[I 120606 17:47:28 web:1447] 302 POST / (127.0.0.1) 65.77ms
+[E 120606 17:47:28 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=f0f4b605ce7d4128b23cae0b399bf1fd&category=8', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:11.0) Gecko/20100101 Firefox/11.0', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.0.96', 'Cookie': '_xsrf=f0f4b605ce7d4128b23cae0b399bf1fd; user="NTU=|1338976043|83cc2d9cae0dc6f858be32b4a96c44d2c1a39a47"', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:47:28 web:718] Cannot send error response after headers written
+[I 120606 17:47:28 web:1447] 200 GET /supper (127.0.0.1) 4.40ms
+[I 120606 17:47:31 web:1447] 200 GET / (127.0.0.1) 4.94ms
+[I 120606 17:47:33 web:1447] 304 GET / (127.0.0.1) 4.61ms
+[I 120606 17:47:36 web:1447] 304 GET / (127.0.0.1) 4.48ms
+[I 120606 17:47:36 web:1447] 200 GET / (127.0.0.1) 4.49ms
+[I 120606 17:47:37 web:1447] 304 GET / (127.0.0.1) 4.55ms
+[I 120606 17:47:39 web:1447] 304 GET / (127.0.0.1) 4.53ms
+[I 120606 17:47:42 web:1447] 304 GET / (127.0.0.1) 4.51ms
+[I 120606 17:47:43 web:1447] 304 GET / (127.0.0.1) 4.44ms
+[I 120606 17:47:56 web:1447] 302 GET / (127.0.0.1) 3.17ms
+[I 120606 17:47:56 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.61ms
+[I 120606 17:48:10 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 4.19ms
+[I 120606 17:48:10 web:1447] 200 GET / (127.0.0.1) 5.19ms
+[I 120606 17:48:16 web:1447] 302 POST / (127.0.0.1) 46.88ms
+[E 120606 17:48:16 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=04ac4a15db224f5690764f2cca6d411a&category=7', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:11.0) Gecko/20100101 Firefox/11.0', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.0.96', 'Cookie': '_xsrf=04ac4a15db224f5690764f2cca6d411a; user="Njk=|1338976090|410b7b9e497f46e543835b46c48282ff6d7522ee"', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:48:16 web:718] Cannot send error response after headers written
+[I 120606 17:48:16 web:1447] 200 GET /supper (127.0.0.1) 5.89ms
+[I 120606 17:50:36 web:1447] 200 GET / (127.0.0.1) 5.30ms
+[I 120606 17:50:38 web:1447] 200 POST /cancel (127.0.0.1) 62.11ms
+[I 120606 17:50:42 web:1447] 200 GET / (127.0.0.1) 5.13ms
+[I 120606 17:50:48 web:1447] 302 POST / (127.0.0.1) 65.11ms
+[E 120606 17:50:48 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=6e904427e8ab42fd948f0116f0b192a0&category=7', headers={'Content-Length': '49', 'Accept-Language': 'en-us,en;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.1.109', 'Cookie': 'user="NTk=|1338369080|90e86e66fa753e0f610e4c121f2bea5a9ddf00f6"; _xsrf=6e904427e8ab42fd948f0116f0b192a0', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:50:48 web:718] Cannot send error response after headers written
+[I 120606 17:50:48 web:1447] 200 GET /supper (127.0.0.1) 4.29ms
+[I 120606 17:50:59 web:1447] 304 GET / (127.0.0.1) 4.99ms
+[I 120606 17:51:01 web:1447] 200 POST /cancel (127.0.0.1) 54.52ms
+[I 120606 17:51:03 web:1447] 200 GET / (127.0.0.1) 5.15ms
+[I 120606 17:51:06 web:1447] 302 POST / (127.0.0.1) 59.12ms
+[E 120606 17:51:06 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=2ec1e9e173084379a46b77e2051b49bb&category=7', headers={'Content-Length': '49', 'Accept-Language': 'en-US,en;q=0.9', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1', 'User-Agent': 'Opera/9.80 (X11; Linux x86_64; U; Edition Next; en) Presto/2.10.289 Version/12.00', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'X-Real-Ip': '192.168.0.96', 'Cookie': '_xsrf=2ec1e9e173084379a46b77e2051b49bb; user="NDg=|1338975058|03d65532ce23bfd0b8e673185ea8b06074320d55"', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:51:06 web:718] Cannot send error response after headers written
+[I 120606 17:51:06 web:1447] 200 GET /supper (127.0.0.1) 4.33ms
+[I 120606 17:51:18 web:1447] 304 GET / (127.0.0.1) 5.22ms
+[I 120606 17:51:23 web:1447] 302 POST / (127.0.0.1) 70.67ms
+[E 120606 17:51:23 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=400ce8b99af6422d86ff6fdb037acbf5&category=7', headers={'Content-Length': '49', 'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'image/jpeg, application/x-ms-application, image/gif, application/xaml+xml, image/pjpeg, application/x-ms-xbap, application/x-shockwave-flash, */*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; 360SE)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.1.179', 'Cookie': 'user="Mzc=|1338369027|bcbca46b1bbbdc540e02896458403e07fd9f4c36"; _xsrf=400ce8b99af6422d86ff6fdb037acbf5', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:51:23 web:718] Cannot send error response after headers written
+[I 120606 17:51:23 web:1447] 200 GET /supper (127.0.0.1) 4.28ms
+[I 120606 17:51:58 web:1447] 200 GET / (127.0.0.1) 5.02ms
+[I 120606 17:53:10 web:1447] 302 POST / (127.0.0.1) 67.84ms
+[E 120606 17:53:10 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=df086aee9519493d86f1502d578b51f2&category=8', headers={'Origin': 'http://192.168.0.154:8888', 'Content-Length': '49', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip,deflate,sdch', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.9 (KHTML, like Gecko) Chrome/20.0.1115.1 Safari/536.9', 'Accept-Charset': 'GBK,utf-8;q=0.7,*;q=0.3', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '192.168.1.10', 'Cookie': 'user="MjI=|1338371380|846ac3952422bac9399de2f00fca71d7fe529f5c"; _xsrf=df086aee9519493d86f1502d578b51f2', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:53:10 web:718] Cannot send error response after headers written
+[I 120606 17:53:10 web:1447] 200 GET /supper (127.0.0.1) 4.28ms
+[I 120606 17:53:12 web:1447] 200 POST /cancel (127.0.0.1) 75.13ms
+[I 120606 17:53:16 web:1447] 304 GET / (127.0.0.1) 4.40ms
+[I 120606 17:53:22 web:1447] 302 POST / (127.0.0.1) 56.79ms
+[E 120606 17:53:22 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=df086aee9519493d86f1502d578b51f2&category=8', headers={'Origin': 'http://192.168.0.154:8888', 'Content-Length': '49', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip,deflate,sdch', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.9 (KHTML, like Gecko) Chrome/20.0.1115.1 Safari/536.9', 'Accept-Charset': 'GBK,utf-8;q=0.7,*;q=0.3', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '192.168.1.10', 'Cookie': 'user="MjI=|1338371380|846ac3952422bac9399de2f00fca71d7fe529f5c"; _xsrf=df086aee9519493d86f1502d578b51f2', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main2.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:53:22 web:718] Cannot send error response after headers written
+[I 120606 17:53:22 web:1447] 304 GET /supper (127.0.0.1) 4.19ms
+[I 120606 17:53:34 web:1447] 302 GET / (127.0.0.1) 1.19ms
+[I 120606 17:53:34 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.59ms
+[I 120606 17:54:10 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 4.48ms
+[I 120606 17:54:10 web:1447] 200 GET / (127.0.0.1) 4.49ms
+[W 120606 17:54:43 web:1447] 404 GET /2012/06/06/ (127.0.0.1) 3.54ms
+[I 120606 17:54:51 web:1447] 302 POST / (127.0.0.1) 65.08ms
+[E 120606 17:54:51 web:1064] Uncaught exception POST / (127.0.0.1)
+    HTTPRequest(protocol='http', host='192.168.0.154:8888', method='POST', uri='/', version='HTTP/1.0', remote_ip='127.0.0.1', body='_xsrf=a6b4cf3fab72466a9f3e2d655f3d5cf4&category=8', headers={'Content-Length': '49', 'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': '192.168.0.154:8888', 'Accept': 'application/x-shockwave-flash, image/gif, image/jpeg, image/pjpeg, image/pjpeg, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*', 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)', 'Connection': 'close', 'Referer': 'http://192.168.0.154:8888/', 'Cache-Control': 'no-cache', 'X-Real-Ip': '192.168.1.77', 'Cookie': '_xsrf=a6b4cf3fab72466a9f3e2d655f3d5cf4; user="MTA=|1338976450|16938151d4386dcf54ab02b59c39f9f3e793c70f"', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 1021, in _execute
+        getattr(self, self.request.method.lower())(*args, **kwargs)
+      File "main.py", line 168, in post
+        self.flush()
+      File "/home/sunxb/work/dingfan/web/../tornado/web.py", line 660, in flush
+        self.request.write(headers + chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 429, in write
+        self.connection.write(chunk, callback=callback)
+      File "/home/sunxb/work/dingfan/web/../tornado/httpserver.py", line 177, in write
+        assert self._request, "Request closed"
+    AssertionError: Request closed
+[E 120606 17:54:51 web:718] Cannot send error response after headers written
+[I 120606 17:54:51 web:1447] 200 GET /supper (127.0.0.1) 8.63ms
+[W 120606 17:54:53 web:1447] 404 GET /log/2012/06/06/ (127.0.0.1) 1.05ms
+[W 120606 17:55:00 web:1447] 404 GET /admin (127.0.0.1) 0.97ms
+[I 120606 17:55:07 web:1447] 302 GET / (127.0.0.1) 3.73ms
+[I 120606 17:55:07 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.32ms
+[I 120606 18:00:20 web:1447] 302 GET / (127.0.0.1) 1.20ms
+[I 120606 18:00:20 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.21ms
+[W 120606 18:00:26 web:1056] 400 POST /auth/login?next=%2F (127.0.0.1): Missing argument password
+[W 120606 18:00:26 web:1447] 400 POST /auth/login?next=%2F (127.0.0.1) 2.76ms
+[I 120606 18:00:26 web:1447] 304 GET /auth/login?next=%2F (127.0.0.1) 1.72ms
+[I 120606 18:02:16 web:1447] 200 POST /auth/login?next=%2F (127.0.0.1) 4.33ms
+[W 120606 18:02:25 web:1056] 400 POST /auth/login?next=%2F (127.0.0.1): Missing argument password
+[W 120606 18:02:25 web:1447] 400 POST /auth/login?next=%2F (127.0.0.1) 2.84ms
+[W 120606 18:02:32 web:1056] 400 POST /auth/login?next=%2F (127.0.0.1): Missing argument password
+[W 120606 18:02:32 web:1447] 400 POST /auth/login?next=%2F (127.0.0.1) 2.78ms
+[I 120606 18:02:32 web:1447] 304 GET /auth/login?next=%2F (127.0.0.1) 1.79ms
+[W 120606 18:02:39 web:1056] 400 POST /auth/login?next=%2F (127.0.0.1): Missing argument password
+[W 120606 18:02:39 web:1447] 400 POST /auth/login?next=%2F (127.0.0.1) 2.96ms
+[I 120606 18:02:46 web:1447] 302 GET / (127.0.0.1) 1.61ms
+[I 120606 18:02:46 web:1447] 304 GET /auth/login?next=%2F (127.0.0.1) 2.35ms
+[W 120606 18:02:51 web:1056] 400 POST /auth/login?next=%2F (127.0.0.1): Missing argument password
+[W 120606 18:02:52 web:1447] 400 POST /auth/login?next=%2F (127.0.0.1) 19.32ms
+[I 120606 18:02:52 web:1447] 304 GET /auth/login?next=%2F (127.0.0.1) 1.68ms
+[I 120606 18:02:58 web:1447] 302 GET / (127.0.0.1) 1.76ms
+[I 120606 18:02:58 web:1447] 304 GET /auth/login?next=%2F (127.0.0.1) 1.75ms
+[I 120606 18:03:22 web:1447] 200 POST /auth/login?next=%2F (127.0.0.1) 4.01ms
+[W 120606 18:03:34 web:1056] 400 POST /auth/login?next=%2F (127.0.0.1): Missing argument password
+[W 120606 18:03:34 web:1447] 400 POST /auth/login?next=%2F (127.0.0.1) 2.96ms
+[I 120606 18:03:34 web:1447] 304 GET /auth/login?next=%2F (127.0.0.1) 1.74ms
+[I 120606 18:03:44 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 4.59ms
+[I 120606 18:03:44 web:1447] 200 GET / (127.0.0.1) 2.25ms
+[I 120606 18:04:03 web:1447] 304 GET / (127.0.0.1) 4.68ms
+[I 120606 18:04:06 web:1447] 304 GET / (127.0.0.1) 2.72ms
+[I 120606 18:04:06 web:1447] 304 GET / (127.0.0.1) 2.63ms
+[I 120606 18:04:07 web:1447] 304 GET / (127.0.0.1) 2.56ms
+[I 120606 18:04:07 web:1447] 304 GET / (127.0.0.1) 2.60ms
+[I 120606 18:04:07 web:1447] 304 GET / (127.0.0.1) 3.99ms
+[I 120606 18:04:08 web:1447] 304 GET / (127.0.0.1) 2.58ms
+[I 120606 18:04:08 web:1447] 304 GET / (127.0.0.1) 2.68ms
+[I 120606 18:04:08 web:1447] 304 GET / (127.0.0.1) 4.41ms
+[I 120606 18:04:08 web:1447] 304 GET / (127.0.0.1) 1.02ms
+[I 120606 18:04:09 web:1447] 304 GET / (127.0.0.1) 1.27ms
+[I 120606 18:04:10 web:1447] 304 GET / (127.0.0.1) 2.74ms
+[I 120606 18:04:10 web:1447] 304 GET / (127.0.0.1) 2.61ms
+[I 120606 18:04:10 web:1447] 304 GET / (127.0.0.1) 2.57ms
+[I 120606 18:04:17 web:1447] 304 GET / (127.0.0.1) 2.66ms
+[I 120606 18:04:30 web:1447] 304 GET / (127.0.0.1) 3.05ms
+[I 120606 18:04:32 web:1447] 200 GET /statics (127.0.0.1) 5.11ms
+[I 120606 18:04:34 web:1447] 200 GET /statics (127.0.0.1) 6.13ms
+[I 120606 18:05:01 web:1447] 302 GET / (127.0.0.1) 1.19ms
+[I 120606 18:05:01 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 2.53ms
+[I 120606 18:05:23 web:1447] 200 GET / (127.0.0.1) 2.67ms
+[I 120606 18:10:26 web:1447] 200 GET / (127.0.0.1) 2.76ms
+[I 120606 18:11:03 web:1447] 302 GET / (127.0.0.1) 0.54ms
+[I 120606 18:11:03 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 1.01ms
+[I 120606 18:11:41 web:1447] 200 POST /auth/login?next=%2F (127.0.0.1) 3.84ms
+[I 120606 18:16:53 web:1447] 200 GET / (127.0.0.1) 2.76ms
+[I 120606 18:17:26 web:1447] 200 GET /statics (127.0.0.1) 2.74ms
+[I 120606 18:19:45 web:1447] 200 GET /statics (127.0.0.1) 6.23ms
+[I 120606 19:00:42 web:1447] 200 GET /statics (127.0.0.1) 6.59ms
+[I 120607 10:25:41 web:1447] 302 GET / (127.0.0.1) 1.98ms
+[I 120607 10:25:41 web:1447] 200 GET /auth/login?next=%2F (127.0.0.1) 4.14ms
+[I 120607 10:25:52 web:1447] 302 POST /auth/login?next=%2F (127.0.0.1) 5.98ms
+[I 120607 10:25:52 web:1447] 200 GET / (127.0.0.1) 2.73ms
+[I 120607 11:49:58 web:1447] 200 GET / (127.0.0.1) 3.24ms
+[I 120607 13:25:13 web:1447] 200 GET /auth/login (127.0.0.1) 2.48ms
+[I 120607 13:42:18 web:1447] 200 GET / (127.0.0.1) 4.30ms
